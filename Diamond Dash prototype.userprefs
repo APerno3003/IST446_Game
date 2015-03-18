@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Kill_Bad_Guy.cs">
+    <Files>
+      <File FileName="Assets\Script\Movement.cs" Line="30" Column="4" />
+      <File FileName="Assets\Script\Destory_Self_Diamond.cs" Line="10" Column="5" />
+      <File FileName="Assets\Script\Kill_Bad_Guy.cs" Line="15" Column="1" />
+      <File FileName="Assets\Script\Door_Collision.cs" Line="17" Column="6" />
+      <File FileName="Assets\Script\Diamond_Shooter.cs" Line="24" Column="23" />
+      <File FileName="Assets\Script\Kill_Player.cs" Line="6" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
