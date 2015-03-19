@@ -1,10 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Kill_Bad_Guy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Kill_Player.cs">
     <Files>
-      <File FileName="Assets\Script\Kill_Player.cs" Line="10" Column="3" />
-      <File FileName="Assets\Script\Kill_Bad_Guy.cs" Line="10" Column="36" />
-      <File FileName="Assets\Script\Destory_Self_Diamond.cs" Line="15" Column="1" />
+      <File FileName="Assets\Script\Kill_Player.cs" Line="8" Column="12" />
+      <File FileName="Assets\Script\Destory_Self_Diamond.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
