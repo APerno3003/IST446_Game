@@ -52,6 +52,7 @@
      <Compile Include="Assets\Script\Door_Collision.cs" />
      <Compile Include="Assets\Script\Kill_Player.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
+     <Compile Include="Assets\Script\Reload_Scene.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
