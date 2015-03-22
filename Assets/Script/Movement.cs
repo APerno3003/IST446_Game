@@ -4,8 +4,8 @@ using System.Collections;
 public class Movement : MonoBehaviour
 {
 	public float moveSpeed = 6.0F;
-	public float jumpSpeed = 2.0F;
-	public float gravity = 20.0F;
+	//public float jumpSpeed = 2.0F;
+	//public float gravity = 20.0F;
 	public bool onGround = true; // start off true so no auto jump
 
 	public float jump_height = 0.0F;
@@ -27,6 +27,9 @@ public class Movement : MonoBehaviour
 		// reset rotation every frame, so object's rotation is not affected by jump
 		// fixes falling off platform bug
 		transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+
+		// Resets z-position of player every frame, so it cannot fall off platform
+		transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
 
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
 			transform.Translate (new Vector3 (-moveSpeed, 0, 0) * Time.deltaTime);
@@ -50,7 +53,7 @@ public class Movement : MonoBehaviour
 
 		// 3.)
 		// Object is in the middle of jumping, keep going up until max height is reached
-		if (!onGround && jump_height < MAX_JUMP_HEIGHT)
+		if (!onGround && jump_height < MAX_JUMP_HEIGHT && (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow)))
 		{
 			transform.Translate(new Vector3 (0, JUMP_SPEED, 0) * Time.deltaTime, Space.World);
 			jump_height += JUMP_DELTA;
