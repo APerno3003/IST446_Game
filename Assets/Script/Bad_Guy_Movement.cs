@@ -7,13 +7,18 @@ public class Bad_Guy_Movement : MonoBehaviour {
 	private Transform _transform;
 	public float distance;
 	public float speed;
-	public Vector3 _originalPosition;
+	private Vector3 _originalPosition;
 	public bool isGoingLeft;
 
 	void Start () {
+		//records the initial position of the object
 		_originalPosition = gameObject.transform.position;
+
 		_transform = GetComponent<Transform>();
+
+		//sets the speed the object will move in the x direction
 		velocity = new Vector3(speed,0,0);
+		//start first movement
 		_transform.Translate ( velocity.x*Time.deltaTime,0,0);
 	}
 
@@ -23,6 +28,7 @@ public class Bad_Guy_Movement : MonoBehaviour {
 		transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 		transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
 
+		//determines how far from the intial position the current object is
 		float distFromStart = transform.position.x - _originalPosition.x;   
 
 		if (isGoingLeft)
