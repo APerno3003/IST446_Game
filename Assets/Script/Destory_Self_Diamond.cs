@@ -11,7 +11,8 @@ public class Destory_Self_Diamond : MonoBehaviour {
 			Destroy (gameObject);
 		} 
 
-		else if (theCollision.gameObject.name == "Bad_Guy") {
+		else if (theCollision.gameObject.name == "Bad_Guy" || theCollision.gameObject.name == "Bad_Guy_Shoots"
+		         || theCollision.gameObject.name == "Bad_Guy_Moves") {
 
 			Destroy(theCollision.gameObject);
 			Destroy(gameObject);

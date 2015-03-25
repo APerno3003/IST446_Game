@@ -3,18 +3,10 @@ using System.Collections;
 
 public class Bullet_Destory_Self : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void  OnCollisionEnter ( Collision theCollision  ){
-		if (theCollision.gameObject.name == "Bad_Guy" || theCollision.gameObject.name == "Door" 
+		if (theCollision.gameObject.name == "Bad_Guy" || theCollision.gameObject.name == "Bad_Guy_Shoots"
+		    || theCollision.gameObject.name == "Bad_Guy_Moves" || theCollision.gameObject.name == "Door" 
 		    || theCollision.gameObject.name == "Wall"  || theCollision.gameObject.name == "Bullet" 
 		    || theCollision.gameObject.name == "Floor") {
 			

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\Bad_Guy_Movement.cs" />
+     <Compile Include="Assets\Script\Bad_Guy_Shoots.cs" />
      <Compile Include="Assets\Script\Bullet_Destory_Self.cs" />
      <Compile Include="Assets\Script\Button_Scene_Change.cs" />
      <Compile Include="Assets\Script\Destory_Self_Diamond.cs" />
