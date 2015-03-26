@@ -11,7 +11,6 @@ public class Bad_Guy_Shoots : MonoBehaviour {
 	public float counter = 0; 
 	public float seconds = 10;
 
-	//private bool isShooting = false;
 
 	void Start () {
 		prefab = Resources.Load ("Bullet") as GameObject;

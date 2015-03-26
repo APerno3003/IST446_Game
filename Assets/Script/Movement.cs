@@ -9,10 +9,10 @@ public class Movement : MonoBehaviour
 	public bool onGround = true; // start off true so no auto jump
 
 	public float jump_height = 0.0F;
-	public const float MAX_JUMP_HEIGHT = 25.0F;
+	public const float MAX_JUMP_HEIGHT = 22.0F;
 	public const float JUMP_DELTA = 1.0F;
 	public const float SMALL_JUMP = 2.0F;
-	public const float JUMP_SPEED = 8.0F;
+	public const float JUMP_SPEED = 5.0F;
 
 	// Use this for initialization
 	void Start ()
