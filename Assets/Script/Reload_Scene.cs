@@ -11,5 +11,6 @@ public class Reload_Scene : MonoBehaviour {
 			Application.LoadLevel (Application.loadedLevelName);
 			
 		}
+
 	}
 }

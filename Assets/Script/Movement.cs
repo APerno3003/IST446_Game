@@ -4,8 +4,6 @@ using System.Collections;
 public class Movement : MonoBehaviour
 {
 	public float moveSpeed = 6.0F;
-	//public float jumpSpeed = 2.0F;
-	//public float gravity = 20.0F;
 	public bool onGround = true; // start off true so no auto jump
 
 	public float jump_height = 0.0F;
