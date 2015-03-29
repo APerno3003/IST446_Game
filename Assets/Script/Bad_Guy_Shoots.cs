@@ -5,7 +5,7 @@ public class Bad_Guy_Shoots : MonoBehaviour {
 	
 	// Use this for initialization
 	GameObject prefab;
-
+	private Vector3 offset;
 	public string currentDirection = "Right";
 
 	public float counter = 0; 
@@ -14,6 +14,7 @@ public class Bad_Guy_Shoots : MonoBehaviour {
 
 	void Start () {
 		prefab = Resources.Load ("Bullet") as GameObject;
+		offset.Set(0.5F,0.0F,0.0F);
 	}
 	
 	// Update is called once per frame
@@ -25,11 +26,11 @@ public class Bad_Guy_Shoots : MonoBehaviour {
 	void shoot() {
 			GameObject projectile = Instantiate (prefab) as GameObject;
 			if (currentDirection == "Left") {
-				projectile.transform.position = transform.position + -(Camera.main.transform.right);
+				projectile.transform.position = transform.localPosition - offset;//transform.position + -(Camera.main.transform.right);
 				Rigidbody rb = projectile.GetComponent<Rigidbody> ();
 				rb.velocity = Camera.main.transform.right * -10;
 			} else {
-				projectile.transform.position = transform.position + Camera.main.transform.right;
+				projectile.transform.position = transform.localPosition + offset;//transform.position + Camera.main.transform.right;
 				Rigidbody rb = projectile.GetComponent<Rigidbody> ();
 				rb.velocity = Camera.main.transform.right * 10;
 				
