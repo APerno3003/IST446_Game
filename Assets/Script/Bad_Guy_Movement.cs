@@ -25,8 +25,8 @@ public class Bad_Guy_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//keeps badguy on the 0 z plane
-		transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
-		transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
+		//transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+		//transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
 
 		//determines how far from the intial position the current object is
 		float distFromStart = transform.position.x - _originalPosition.x;   

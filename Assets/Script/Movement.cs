@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 	public bool onGround = true; // start off true so no auto jump
 
 	public float jump_height = 0.0F;
-	public const float MAX_JUMP_HEIGHT = 22.0F;
+	public const float MAX_JUMP_HEIGHT = 23.0F;
 	public const float JUMP_DELTA = 1.0F;
 	public const float SMALL_JUMP = 2.0F;
 	public const float JUMP_SPEED = 5.0F;
@@ -24,10 +24,10 @@ public class Movement : MonoBehaviour
 		// 1.)
 		// reset rotation every frame, so object's rotation is not affected by jump
 		// fixes falling off platform bug
-		transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+		//transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 
 		// Resets z-position of player every frame, so it cannot fall off platform
-		transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
+		//transform.position = (new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, 0));
 
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
 			transform.Translate (new Vector3 (-moveSpeed, 0, 0) * Time.deltaTime);

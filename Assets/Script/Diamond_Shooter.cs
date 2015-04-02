@@ -8,14 +8,14 @@ public class Diamond_Shooter : MonoBehaviour
 	GameObject prefab;
 	string currentDirection = "Right";
 	public bool canShoot = false;
-	public int score = 0;
+	public int score = 5000;
 	private const int losePoints = 50;
 	private Vector3 offset;
 
 	void Start ()
 	{
 		prefab = Resources.Load ("Diamond") as GameObject;
-		offset.Set(0.5F,0.0F,0.0F);
+		offset.Set(0.6F,0.0F,0.0F);
 	}
 	
 	// Update is called once per frame
@@ -47,10 +47,10 @@ public class Diamond_Shooter : MonoBehaviour
 		}
 	}
 
-	void  OnCollisionEnter (Collision theCollision)
+	void  OnTriggerEnter (Collider theCollider)
 	{
-		if (theCollision.gameObject.name == "Collect_Diamond") {
-			Destroy (theCollision.gameObject);
+		if (theCollider.gameObject.name == "Collect_Diamond") {
+			Destroy (theCollider.gameObject);
 			canShoot = true;
 		} 
 	}
