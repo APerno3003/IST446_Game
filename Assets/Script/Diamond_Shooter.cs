@@ -16,7 +16,6 @@ public class Diamond_Shooter : MonoBehaviour
 	{
 		prefab = Resources.Load ("Diamond") as GameObject;
 		offset.Set(0.6F,0.0F,0.0F);
-		displayScore ();
 	}
 	
 	// Update is called once per frame
@@ -44,7 +43,6 @@ public class Diamond_Shooter : MonoBehaviour
 			}
 			Object.Destroy (projectile, 3.0f);
 			score -= losePoints;
-			displayScore();
 
 		}
 	}
@@ -57,7 +55,7 @@ public class Diamond_Shooter : MonoBehaviour
 		} 
 	}
 
-	void displayScore() {
+	void OnGUI() {
 		string scoreText = "Score: " + score;
 		GUI.Box(new Rect (10,10,100,20),scoreText);
 	}
