@@ -14,9 +14,9 @@ public class Kill_Player : MonoBehaviour {
 			Application.LoadLevel(Application.loadedLevelName);
 		}
 	}
-	void OnTriggerEnter( Collider theCollision)
+	void OnTriggerEnter( Collider theCollider)
 	{
-		if (theCollision.gameObject.name == "Spike") {
+		if (theCollider.gameObject.name == "Spike" || theCollider.gameObject.name == "Pitfall") {
 			Destroy(gameObject);
 			Application.LoadLevel(Application.loadedLevelName);
 		}

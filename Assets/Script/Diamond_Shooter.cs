@@ -8,7 +8,7 @@ public class Diamond_Shooter : MonoBehaviour
 	GameObject prefab;
 	string currentDirection = "Right";
 	public bool canShoot = false;
-	public int score = 5000;
+	public int score = 0;
 	private const int losePoints = 50;
 	private Vector3 offset;
 
@@ -16,6 +16,7 @@ public class Diamond_Shooter : MonoBehaviour
 	{
 		prefab = Resources.Load ("Diamond") as GameObject;
 		offset.Set(0.6F,0.0F,0.0F);
+		displayScore ();
 	}
 	
 	// Update is called once per frame
@@ -30,7 +31,7 @@ public class Diamond_Shooter : MonoBehaviour
 			
 		}
 
-		if (Input.GetKeyDown (KeyCode.Space) && canShoot) {
+		if (Input.GetKeyDown (KeyCode.Space) && canShoot && (score > 0)) {
 			GameObject projectile = Instantiate (prefab) as GameObject;
 			if (currentDirection == "Left") {
 				projectile.transform.position = transform.localPosition - offset;//transform.position -Camera.main.transform.right;
@@ -43,6 +44,7 @@ public class Diamond_Shooter : MonoBehaviour
 			}
 			Object.Destroy (projectile, 3.0f);
 			score -= losePoints;
+			displayScore();
 
 		}
 	}
@@ -53,5 +55,10 @@ public class Diamond_Shooter : MonoBehaviour
 			Destroy (theCollider.gameObject);
 			canShoot = true;
 		} 
+	}
+
+	void displayScore() {
+		string scoreText = "Score: " + score;
+		GUI.Box(new Rect (10,10,100,20),scoreText);
 	}
 }
