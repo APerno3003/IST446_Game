@@ -129,7 +129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canShoot: 0
-  score: 5000
+  diamondWorth: 1500
+  score: 500
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

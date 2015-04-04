@@ -8,6 +8,7 @@ public class Diamond_Shooter : MonoBehaviour
 	GameObject prefab;
 	string currentDirection = "Right";
 	public bool canShoot = false;
+	public int diamondWorth = 0;
 	public int score = 0;
 	private const int losePoints = 50;
 	private Vector3 offset;
@@ -51,6 +52,7 @@ public class Diamond_Shooter : MonoBehaviour
 	{
 		if (theCollider.gameObject.name == "Collect_Diamond") {
 			Destroy (theCollider.gameObject);
+			score += diamondWorth;
 			canShoot = true;
 		} 
 	}

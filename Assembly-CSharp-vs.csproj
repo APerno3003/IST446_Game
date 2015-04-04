@@ -55,6 +55,7 @@
      <Compile Include="Assets\Script\Diamond_Shooter.cs" />
      <Compile Include="Assets\Script\Door_Collision.cs" />
      <Compile Include="Assets\Script\Kill_Player.cs" />
+     <Compile Include="Assets\Script\Level_Timer.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
      <Compile Include="Assets\Script\Reload_Scene.cs" />
  <Reference Include="UnityEngine.UI">
