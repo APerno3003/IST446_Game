@@ -7,7 +7,7 @@ public class Destory_Self_Diamond : MonoBehaviour {
 		if (theCollision.gameObject.name == "Player" /*|| theCollision.gameObject.name == "Door" */
 			|| theCollision.gameObject.name == "Wall"|| theCollision.gameObject.name == "Floor" 
 		    || theCollision.gameObject.name == "Diamond"|| theCollision.gameObject.name == "Diamond(Clone)"
-		    /*|| theCollision.gameObject.name == "Collect_Diamond"*/) {
+		    || theCollision.gameObject.name == "Moving_Floor") {
 
 			Destroy (gameObject);
 		} 

@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
 	
 	void  OnCollisionEnter (Collision theCollision)
 	{
-		if (theCollision.gameObject.name == "Floor") {
+		if (theCollision.gameObject.name == "Floor" || theCollision.gameObject.name == "Moving_Floor") {
 			// 4.) upon hitting ground, reset jump height for next jump
 			onGround = true; 
 			jump_height = 0.0F;
@@ -70,7 +70,7 @@ public class Movement : MonoBehaviour
 	}
 
 	void  OnCollisionExit ( Collision theCollision  ){
-		if(theCollision.gameObject.name == "Floor"){
+		if(theCollision.gameObject.name == "Floor" || theCollision.gameObject.name == "Moving_Floor"){
 			onGround = false;
 		}
 	}

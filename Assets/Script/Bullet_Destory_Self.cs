@@ -9,7 +9,7 @@ public class Bullet_Destory_Self : MonoBehaviour {
 		    || theCollision.gameObject.name == "Bad_Guy_Moves" /*|| theCollision.gameObject.name == "Door" */
 		    || theCollision.gameObject.name == "Wall"  || theCollision.gameObject.name == "Bullet" 
 		    || theCollision.gameObject.name == "Bullet(Clone)" || theCollision.gameObject.name == "Floor" 
-		    /*|| theCollision.gameObject.name == "Collect_Diamond"*/ || theCollision.gameObject.name == "Bad_Guy_Moves_Shoots") {
+		    || theCollision.gameObject.name == "Moving_Floor" || theCollision.gameObject.name == "Bad_Guy_Moves_Shoots") {
 			
 			Destroy (gameObject);
 		} 
