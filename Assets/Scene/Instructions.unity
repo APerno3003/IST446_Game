@@ -428,6 +428,8 @@ MonoBehaviour:
 
     If the level has a diamond you must first get the diamond before you can shoot
 
+    If the level doesn''t have a dimaond you can shoot right away
+
     Remeber the more diamonds you shoot the lower your score
 
     Avoid Bad Guys and Spikes'
