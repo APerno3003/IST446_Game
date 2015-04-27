@@ -58,6 +58,7 @@
      <Compile Include="Assets\Script\Level_Timer.cs" />
      <Compile Include="Assets\Script\Movement.cs" />
      <Compile Include="Assets\Script\Reload_Scene.cs" />
+     <Compile Include="Assets\Script\ReturnToMainMenu.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

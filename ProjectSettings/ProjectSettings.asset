@@ -12,7 +12,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Diamond Dash prototype
+  productName: Diamond Days
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -251,7 +251,8 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    2: 
   metroPackageName: Diamond Dash prototype
   metroPackageLogo: 
   metroPackageLogo140: 
