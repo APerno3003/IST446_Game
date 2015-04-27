@@ -418,21 +418,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press Up or W to jump
+  m_Text: 'UP or W = Jump (Hold key for a higher jump)
 
-    Press Left or A to move left
+    LEFT or A = Move Left
 
-    Press the Right or D key to move right
+    RIGHT or D = Move Right
 
-    Press Space bar to shoot
+    SPACE BAR = Shoot
 
-    If the level has a diamond you must first get the diamond before you can shoot
 
-    If the level doesn''t have a dimaond you can shoot right away
+    If the level has a diamond, you must first get the diamond before you can shoot.
 
-    Remeber the more diamonds you shoot the lower your score
+    If the level doesn''t have a diamond, you can shoot right away.
 
-    Avoid Bad Guys and Spikes'
+
+    The more diamonds you shoot, the lower your score is after a level.
+
+    You can continue shooting until your score is zero.
+
+    Avoid Bad Guys and Spikes!!'
 --- !u!222 &1213252766
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -657,7 +661,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.69143867
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
